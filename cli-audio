@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+
+from front.FrontEnd import FrontEnd
+from player.Player import Player
+from library.Library import Library
+from curses import wrapper
+
+
+def main():
+    player = Player()
+    library = Library()
+    front_end = FrontEnd(player, library)
+
+
+if __name__ == "__main__":
+    main()
+
